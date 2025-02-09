@@ -1,0 +1,43 @@
+header {
+  background: linear-gradient(to left, rgba(4, 4, 4), rgba(4, 4, 4), red);
+  color: white;
+  padding: 15px 0;
+  width: 100%;
+}
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.marquee-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  animation: marquee 15s linear infinite;
+}
+
+.head-tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: large;
+}
+
+.head-tag img {
+  filter: invert();
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}

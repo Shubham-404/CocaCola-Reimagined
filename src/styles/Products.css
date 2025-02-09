@@ -1,0 +1,27 @@
+.product-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    min-width: 200px;
+    max-width: 350px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 0, 0, 0.5);
+  }
+  
+  .product-icon {
+    width: 100px;
+    height: 100px;
+    background: url('/images/coca-cola-logo-svgrepo-com.png') no-repeat center;
+    background-size: contain;
+    margin: 0 auto;
+    animation: float 2s infinite alternate ease-in-out;
+  }
+  
+  
