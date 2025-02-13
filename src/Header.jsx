@@ -10,15 +10,15 @@ const Header = () => {
                 <div className="marquee">
                     <div className='marquee-content'>
                         <span className='head-tag'>
-                            <img height="40" src="/images/Coke-company-logo-black.svg" alt="" />
+                            <img height="40" src="/CocaCola-Reimagined/images/Coke-company-logo-black.svg" alt="" />
                         </span>
                         <span>&nbsp;•&nbsp; </span>
                         <span className='head-tag'>
-                            <img height="40" src="/images/Coke-company-logo-black.svg" alt="" />
+                            <img height="40" src="/CocaCola-Reimagined/images/Coke-company-logo-black.svg" alt="" />
                         </span>
                         <span>&nbsp;•&nbsp; </span>
                         <span className='head-tag'>
-                            <img height="40" src="/images/Coke-company-logo-black.svg" alt="" />
+                            <img height="40" src="/CocaCola-Reimagined/images/Coke-company-logo-black.svg" alt="" />
                         </span>
                         
 

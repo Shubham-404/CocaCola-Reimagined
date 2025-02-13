@@ -8,15 +8,16 @@ nav {
     justify-content: center;
     top: 20px;
     z-index: 10;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 
 ul {
     border-radius: 15px;
     box-shadow: 1px 10px 10px rgba(25, 25, 25, 0.3);
-    background-color: rgba(240, 236, 236, 0.8);
-    backdrop-filter: blur(4px);
+    background-color: rgba(220, 50, 50, 0.8);
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
     height: 100%;
     width: max-content;
     min-width: 51%;
@@ -41,7 +42,7 @@ ul {
 
 .nav-li a {
     transition: .5s ease-in-out;
-    color: rgb(51, 51, 51);
+    color: rgb(221, 221, 221);
     /* background: linear-gradient(white,red); */
     background-position: bottom;
     height: 100%;
@@ -67,13 +68,13 @@ ul {
     background-color: rgb(255, 40, 40);
     border-radius: 10px 10px 0 0;
     z-index: -1;
-    transition: .5s;
+    transition: .3s;
 }
 
 ul:hover {
-    background-color: rgba(246, 246, 246, 0.9);
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
-    transform: scale(1.01);
+    background-color: rgba(15, 15, 15, 0.9);
+    box-shadow: 0px 10px 15px rgba(5, 5, 5, 0.5);
+    transform: scale(1.02);
 }
 
 .nav-li a:hover::after {

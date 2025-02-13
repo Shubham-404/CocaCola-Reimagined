@@ -1,0 +1,85 @@
+/* Reviews Section Container */
+.reviews-section {
+    background: linear-gradient(90deg, #0f0f0f9a, #4b10106b);
+    box-shadow: inset -2px -2px 20px rgba(0, 0, 0, 0.664);
+    color: #fff;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    padding: 4rem 2rem;
+    text-align: center;
+    width: 90vw;
+    border-radius: 15px;
+  }
+  
+  /* Section Heading */
+  .reviews-section h2 {
+    font-family: "Great Vibes", cursive;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #ff4b2b;
+  }
+  
+  /* Reviews Container Layout */
+  .reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  /* Review Card Styling */
+  .review-card {
+    background: rgba(27, 27, 27, 0.6);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 1.5rem;
+    max-width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+  }
+  
+  .review-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Review Text Styling */
+  .review-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  /* Reviewer Info */
+  .reviewer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+  
+  /* Reviewer Avatar */
+  .reviewer-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #ff4b2b;
+  }
+  
+  /* Reviewer Name */
+  .reviewer-name {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    color: #ff4b2b;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .reviews-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
