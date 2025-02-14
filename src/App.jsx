@@ -3,6 +3,7 @@ import Header from './Header';
 import Nav from './Nav';
 import Welcome from './Welcome';
 import Products from './Products';
+import Partners from './Partners';
 import Reviews from './Reviews';
 import Footer from './Footer';
 
@@ -15,6 +16,7 @@ const App = () => {
         <Welcome />
         <Products />
         <Reviews />
+        <Partners/>
       </main>
       <Footer />
 

@@ -34,8 +34,8 @@
   }
 
   .welcome-content {
-    --bkBlr: 7px;
-    background: linear-gradient(rgba(255, 12, 12, 0.7), rgba(10, 10, 10, 0.7));
+    --bkBlr: 5px;
+    background: linear-gradient(rgba(255, 12, 12, 0.7), rgba(10, 10, 10, 0.2));
     box-shadow: 5px 5px 10px black;
     padding: 3rem;
     border-radius: 25px;

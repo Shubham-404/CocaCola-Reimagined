@@ -1,6 +1,12 @@
 #products {
   width: 100%;
-  margin: 0 20px;
+  margin: 0px 20px;
+}
+
+:root{
+  --left: 290px;
+  --left2: 190px;
+  --rock: 250px;
 }
 
 .container {
@@ -10,6 +16,7 @@
   background-repeat: no-repeat;
   height: 90vh;
   margin: 2rem;
+  margin-bottom: 0;
   margin-top: 3rem;
   border-radius: 25px;
   display: flex;
@@ -57,33 +64,51 @@
   animation: float 2s infinite alternate linear;
 }
 
-#mid {
+.middle {
+  --left: 210px;
+  --left2: -40px;
+  --rock: 220px;
+  --rock-bottom: -55px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center ;
+  position: relative;
+}
+
+#mid {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: flex-start;
+  justify-content: center;
   gap: 20px;
   min-width: 300px;
-  height: min-content;
+  height: 300px;
   /* border: 2px solid orange; */
-  --left: 210px;
-  --rock: 220px;
+  position: relative;
 
 }
 
-#mid:hover {
+#mid:hover, .middle:hover {
   --left: 290px;
-  --rock: 250px;
+  --left2: 150px;
+  /* --rock: 200px; */
+  --rock-bottom: -80px;
 }
 
 #mid-rock {
-  transition: 1s;
+  transition: 1s cubic-bezier(0.215, 0.610, 0.355, 1);
   width: var(--rock);
+  justify-self: flex-end;
+  position: absolute;
+  bottom: var(--rock-bottom);
+  z-index: 0;
 }
 
 
 #can-box {
-  top: 50px;
+  top: 3rem;
   height: 220px;
   width: 120px;
   display: flex;
@@ -94,27 +119,28 @@
   object-fit: contain;
   transition: 1s;
   padding-bottom: 20px;
-
+  position: absolute;
+  z-index: 3;
 }
 
 .can-cover {
-  background: url("/CocaCola-Reimagined/images/coca\ cola.jpg") var(--left) 0px, url("/images/close-up-metallic-tin-can-removebg-preview.png");
+  background: url(--url) var(--left) 0px, url("/CocaCola-Reimagined/images/close-up-metallic-tin-can-removebg-preview.png");
   background-size: auto 100%;
   /* opacity: .5; */
   width: 300px;
   aspect-ratio: 2/4.1;
   background-blend-mode: multiply;
   -webkit-mask-image: url("/images/close-up-metallic-tin-can-removebg-preview.png");
-  mask-image: url("/images/close-up-metallic-tin-can-removebg-preview.png");
+  mask-image: url("/CocaCola-Reimagined/images/close-up-metallic-tin-can-removebg-preview.png");
   -webkit-mask-size: auto 100%;
   mask-size: auto 100%;
   transition: 1s;
-  padding-bottom: 20px;
 }
 
 #can-box:hover {
   --left: -80px;
-  top: 0px;
+  --left2: -70px;
+  top: -1rem;
   transform: rotate(-15deg);
 }
 
@@ -164,7 +190,7 @@ button>a:hover {
   color: inherit;
 }
 
-.barcode{
+.barcode {
   filter: invert();
 }
 

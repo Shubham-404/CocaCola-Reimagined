@@ -2,10 +2,36 @@ import React from 'react';
 import "./styles/Products.css"
 
 const Products = () => {
+  const mystyle = {
+    background: `url("/CocaCola-Reimagined/images/coca\ cola.jpg") var(--left) 0px, url("/CocaCola-Reimagined/images/close-up-metallic-tin-can-removebg-preview.png")`,
+    backgroundSize: `auto 100%`,
+    /* opacity: .5; */
+    width: `300px`,
+    aspectRatio: `2/4.1`,
+    backgroundBlendMode: `multiply`,
+    // -webkit-mask-image: `url("/images/close-up-metallic-tin-can-removebg-preview.png")`;
+    maskImage: `url("/CocaCola-Reimagined/images/close-up-metallic-tin-can-removebg-preview.png")`,
+    // -webkit-mask-size: `auto 100%`;
+    maskSize: `auto 100%`,
+    transition: `1s`,
+  };
+  const mystyle2 = {
+    background: `url("/CocaCola-Reimagined/images/sprite1.jpg") var(--left2) 0px, url("/CocaCola-Reimagined/images/close-up-metallic-tin-can-removebg-preview.png")`,
+    backgroundSize: `auto 100%`,
+    /* opacity: .5; */
+    width: `300px`,
+    aspectRatio: `2/4.1`,
+    backgroundBlendMode: `multiply`,
+    // -webkit-mask-image: `url("/images/close-up-metallic-tin-can-removebg-preview.png")`;
+    maskImage: `url("/CocaCola-Reimagined/images/close-up-metallic-tin-can-removebg-preview.png")`,
+    // -webkit-mask-size: `auto 100%`;
+    maskSize: `auto 100%`,
+    transition: `1s`,
+  };
   return (
     <>
       {/* Container for the Main Content */}
-      <div id="products">
+      <div id="products" className=''>
         <div className="container">
           <h1>Refresh. &nbsp; Rethink. &nbsp; Recreate.</h1>
 
@@ -22,10 +48,13 @@ const Products = () => {
             <div className="middle">
               <div id="mid" className=''>
                 <div id="can-box" className=''>
-                  <div className="can-cover "></div>
+                  <div className="can-cover hide" style={mystyle}></div>
                 </div>
-                <img id="mid-rock" className='' src="/CocaCola-Reimagined/images/base rock.png" alt="" />
+                <div id="can-box" className=''>
+                  <div className="can-cover" style={mystyle2}></div>
+                </div>
               </div>
+              <img id="mid-rock" className='' src="/CocaCola-Reimagined/images/base rock.png" alt="" />
             </div>
 
             <div className="product-card">
@@ -48,10 +77,10 @@ const Products = () => {
             </div>
             <div className="arrow">
               <img height={20} src="/CocaCola-Reimagined/images/next-right-arrow-svgrepo-com.svg" alt="NotFound" />
-              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </div >
     </>
   );
 };
