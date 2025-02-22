@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import "./styles/Welcome.css";
+import Button from "./comps/Button";
 
 const Welcome = () => {
   const videoRef = useRef(null);
@@ -26,11 +27,13 @@ const Welcome = () => {
         Video playback not supported by the browser. Update.
       </video>
       <div className="welcome-content">
-        <h1 className="welcome-text txt-l">Refresh with a Drink! 🥤</h1>
-        <p className="welcome-text">Experience the ultimate taste of happiness.</p>
-        <button id="explore-btn">
-          <a href="#products">Explore Products</a>
-        </button>
+        <div className="sub-content">
+
+          <h1 className="welcome-text txt-l">Refresh with a Drink!</h1>
+          <h1 className="welcome-text txt-l">🥤</h1>
+          <p className="welcome-text">Experience the ultimate taste of happiness.</p>
+          <Button />
+        </div>
       </div>
     </section>
   );

@@ -1,13 +1,13 @@
 import React from "react";
 import "./styles/Reviews.css";
 
-const Reviews = () => {
+const Reviews = (props) => {
   return (
     <>
-      <div id="reviews"  className="reviews">
+      <div id={props.ID}  className="reviews">
 
         <section className="reviews-section">
-          <h2>What Our Customers Say</h2>
+          <h2>{props.H2}</h2>
           <span className="span">We have a lovely consumer community and customer support. Our products have been the first choice of people for several years. Here are some of the thoughts of our trusted customers, about The CocaCola products.</span>
           <div className="reviews-container">
             <div className="review-card">

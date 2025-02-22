@@ -2,14 +2,14 @@
     background-color: black;
     box-shadow: 5px 5px 10px rgb(10, 10, 10);
     color: white;
-    min-height: 60vh;
-    max-height: 75vh;
+    min-height: 75vh;
+    max-height: 90vh;
     width: 95%;
     overflow: hidden;
     border-radius: 20px;
     margin-top: 20px;
     text-align: center;
-    /* position: relative; */
+    position: relative;
   }
 
   h1 {
@@ -23,10 +23,11 @@
   .welcome-bg-video {
     filter: brightness(.5);
     filter: contrast(2.5);
+    position: absolute;
     top: 0;
+    bottom: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
+    right: 0;
     object-fit: cover;
     object-position: center;
     z-index: 0;
@@ -34,50 +35,39 @@
   }
 
   .welcome-content {
-    --bkBlr: 5px;
-    background: linear-gradient(rgba(255, 12, 12, 0.7), rgba(10, 10, 10, 0.2));
+    --bkBlr: 7px;
+    background: linear-gradient(rgba(255, 12, 12, 0.4), rgba(10, 10, 10, 0.6));
     box-shadow: 5px 5px 10px black;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.705);
     padding: 3rem;
-    border-radius: 25px;
     -webkit-backdrop-filter: blur(var(--bkBlr));
     backdrop-filter: blur(var(--bkBlr));
-    animation: fadeIn 1.5s ease-in-out;
+    animation: fadeIn 1.5s ease-in-out, float .5s ease-in-out;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+  }
 
+  .sub-content {
+    animation: float 2s infinite alternate ease-in-out;
   }
 
   .welcome-text {
     opacity: 0;
     animation: textFade 2s ease-in-out forwards;
   }
-  .txt-l{
+
+  .txt-l {
     font-size: 2.5rem;
     font-weight: bold;
     padding: 5px;
-  }
-
-  #explore-btn {
-    margin-top: 20px;
-    padding: 12px 24px;
-    font-size: 18px;
-    background: linear-gradient(to right, #ff416c, #ff4b2b);
-    color: white;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-  }
-
-  #explore-btn:hover {
-    box-shadow: 0 0 10px rgba(255, 50, 50, 0.8);
-    transform: scale(1.02);
-  }
-
-  button>a:hover{
-    color: inherit;
   }
 
   /* Smooth Fade-in Animation */
@@ -94,7 +84,7 @@
   @keyframes textFade {
     0% {
       opacity: 0;
-      transform: translateY(20px);
+      transform: translateY(10px);
     }
 
     100% {

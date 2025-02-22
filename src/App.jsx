@@ -11,11 +11,11 @@ const App = () => {
   return (
     <>
       <Header />
-      <main id='main' className='main'>
+      <main id='main'>
         <Nav />
         <Welcome />
         <Products />
-        <Reviews />
+        <Reviews ID="reviews" H2="What Our Customers Say"/>
         <Partners/>
       </main>
       <Footer />
